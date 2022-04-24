@@ -55,6 +55,7 @@ while game_is_on:
         if ball.distance(wall) < 50 and ball.ycor() > -100:
             ball.y_bounce()
             wall.reset()
+            wall.setx(1000)
             scores.point()
             wall_list.remove(wall)
             if len(wall_list) == 0:
